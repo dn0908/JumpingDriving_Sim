@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="URDF">
+  <link
+    name="Body">
+    <inertial>
+      <origin
+        xyz="-0.0395402471728084 -0.00184989651717486 0.09"
+        rpy="0 0 0" />
+      <mass
+        value="0.243" />
+      <inertia
+        ixx="0.00023596875"
+        ixy="3.03041961099635E-21"
+        ixz="-2.32620397841817E-20"
+        iyy="0.000253125"
+        iyz="1.88834137129082E-22"
+        izz="0.00012864375" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF/meshes/Body.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF/meshes/Body.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Pinion">
+    <inertial>
+      <origin
+        xyz="-0.09 0.005 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0205" />
+      <inertia
+        ixx="1.94320833333333E-06"
+        ixy="7.97744863461242E-23"
+        ixz="-3.56610955074228E-21"
+        iyy="7.43702916666667E-05"
+        iyz="1.20051464052139E-23"
+        izz="7.276875E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF/meshes/Pinion.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF/meshes/Pinion.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Jump_Joint"
+    type="prismatic">
+    <origin
+      xyz="0.077465 -0.09 -0.0073499"
+      rpy="1.5708 0 0" />
+    <parent
+      link="Body" />
+    <child
+      link="Pinion" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Wheel_L">
+    <inertial>
+      <origin
+        xyz="1.97884415333027E-07 -9.33814763134401E-07 0.00780509321470493"
+        rpy="0 0 0" />
+      <mass
+        value="0.128695943927534" />
+      <inertia
+        ixx="0.000240458281131636"
+        ixy="9.43470263039089E-10"
+        ixz="2.11505157940015E-10"
+        iyy="0.000240461373941782"
+        iyz="-3.97200062123865E-10"
+        izz="0.000475201172645655" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF/meshes/Wheel_L.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF/meshes/Wheel_L.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Wheel_L_REV"
+    type="fixed">
+    <origin
+      xyz="-0.038359 -0.16 -0.0021168"
+      rpy="-1.5708 -0.032444 0" />
+    <parent
+      link="Body" />
+    <child
+      link="Wheel_L" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Wheel_R">
+    <inertial>
+      <origin
+        xyz="1.97884415339966E-07 -9.33814763140906E-07 0.00780509321470492"
+        rpy="0 0 0" />
+      <mass
+        value="0.128695943927534" />
+      <inertia
+        ixx="0.000240458281131637"
+        ixy="9.43470262995111E-10"
+        ixz="2.11505157944668E-10"
+        iyy="0.000240461373941782"
+        iyz="-3.97200062126965E-10"
+        izz="0.000475201172645655" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF/meshes/Wheel_R.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF/meshes/Wheel_R.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Wheel_R_REV"
+    type="fixed">
+    <origin
+      xyz="-0.038359 -0.02 -0.0021168"
+      rpy="1.5708 0 0" />
+    <parent
+      link="Body" />
+    <child
+      link="Wheel_R" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
