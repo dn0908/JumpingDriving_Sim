@@ -1,4 +1,4 @@
-prefix=/home/diana/JumpingDriving_Sim/install/URDF
+prefix=/home/diana/JumpingDriving_Sim/install
 
 Name: URDF
 Description: Description of URDF

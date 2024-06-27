@@ -1,8 +1,0 @@
-Invoking command in '/home/diana/JumpingDriving_Sim/build/URDF': /usr/bin/cmake /home/diana/JumpingDriving_Sim/src/robot_urdf -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/diana/JumpingDriving_Sim/install/URDF
-Invoked command in '/home/diana/JumpingDriving_Sim/build/URDF' returned '0': /usr/bin/cmake /home/diana/JumpingDriving_Sim/src/robot_urdf -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/diana/JumpingDriving_Sim/install/URDF
-Invoking command in '/home/diana/JumpingDriving_Sim/build/URDF': /usr/bin/cmake --build /home/diana/JumpingDriving_Sim/build/URDF -- -j2 -l2
-Invoked command in '/home/diana/JumpingDriving_Sim/build/URDF' returned '0': /usr/bin/cmake --build /home/diana/JumpingDriving_Sim/build/URDF -- -j2 -l2
-Invoking command in '/home/diana/JumpingDriving_Sim/build/URDF': /usr/bin/cmake --build /home/diana/JumpingDriving_Sim/build/URDF --target tests -- -j2 -l2
-Invoked command in '/home/diana/JumpingDriving_Sim/build/URDF' returned '0': /usr/bin/cmake --build /home/diana/JumpingDriving_Sim/build/URDF --target tests -- -j2 -l2
-Invoking command in '/home/diana/JumpingDriving_Sim/build/URDF': /usr/bin/cmake --install /home/diana/JumpingDriving_Sim/build/URDF
-Invoked command in '/home/diana/JumpingDriving_Sim/build/URDF' returned '0': /usr/bin/cmake --install /home/diana/JumpingDriving_Sim/build/URDF

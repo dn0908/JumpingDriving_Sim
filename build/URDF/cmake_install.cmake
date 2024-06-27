@@ -1,8 +1,8 @@
-# Install script for directory: /home/diana/JumpingDriving_Sim/src/robot_urdf
+# Install script for directory: /home/diana/JumpingDriving_Sim/src/URDF
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/diana/JumpingDriving_Sim/install/URDF")
+  set(CMAKE_INSTALL_PREFIX "/home/diana/JumpingDriving_Sim/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,22 +38,33 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/diana/JumpingDriving_Sim/build/URDF/catkin_symlink_install/catkin_symlink_install.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/diana/JumpingDriving_Sim/build/URDF/catkin_generated/installspace/URDF.pc")
 endif()
 
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/home/diana/JumpingDriving_Sim/build/URDF/gtest/cmake_install.cmake")
-
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/URDF/cmake" TYPE FILE FILES
+    "/home/diana/JumpingDriving_Sim/build/URDF/catkin_generated/installspace/URDFConfig.cmake"
+    "/home/diana/JumpingDriving_Sim/build/URDF/catkin_generated/installspace/URDFConfig-version.cmake"
+    )
 endif()
 
-if(CMAKE_INSTALL_COMPONENT)
-  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
-else()
-  set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/URDF" TYPE FILE FILES "/home/diana/JumpingDriving_Sim/src/URDF/package.xml")
 endif()
 
-string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
-       "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/diana/JumpingDriving_Sim/build/URDF/${CMAKE_INSTALL_MANIFEST}"
-     "${CMAKE_INSTALL_MANIFEST_CONTENT}")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/URDF/config" TYPE DIRECTORY FILES "/home/diana/JumpingDriving_Sim/src/URDF/config/")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/URDF/launch" TYPE DIRECTORY FILES "/home/diana/JumpingDriving_Sim/src/URDF/launch/")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/URDF/meshes" TYPE DIRECTORY FILES "/home/diana/JumpingDriving_Sim/src/URDF/meshes/")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/URDF/urdf" TYPE DIRECTORY FILES "/home/diana/JumpingDriving_Sim/src/URDF/urdf/")
+endif()
+

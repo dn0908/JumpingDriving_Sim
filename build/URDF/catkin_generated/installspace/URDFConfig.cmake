@@ -67,14 +67,14 @@ set(URDF_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(URDF_SOURCE_PREFIX /home/diana/JumpingDriving_Sim/src/robot_urdf)
-  set(URDF_DEVEL_PREFIX /home/diana/JumpingDriving_Sim/build/URDF/devel)
+  set(URDF_SOURCE_PREFIX /home/diana/JumpingDriving_Sim/src/URDF)
+  set(URDF_DEVEL_PREFIX /home/diana/JumpingDriving_Sim/devel)
   set(URDF_INSTALL_PREFIX "")
   set(URDF_PREFIX ${URDF_DEVEL_PREFIX})
 else()
   set(URDF_SOURCE_PREFIX "")
   set(URDF_DEVEL_PREFIX "")
-  set(URDF_INSTALL_PREFIX /home/diana/JumpingDriving_Sim/install/URDF)
+  set(URDF_INSTALL_PREFIX /home/diana/JumpingDriving_Sim/install)
   set(URDF_PREFIX ${URDF_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/diana/JumpingDriving_Sim/install/URDF/lib;/opt/ros/noetic/lib)
+    foreach(path /home/diana/JumpingDriving_Sim/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

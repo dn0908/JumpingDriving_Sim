@@ -1,0 +1,2 @@
+jumping_robot
+-DCATKIN_DEVEL_PREFIX=/home/diana/JumpingDriving_Sim/devel -DCMAKE_INSTALL_PREFIX=/home/diana/JumpingDriving_Sim/install -G Unix Makefiles
