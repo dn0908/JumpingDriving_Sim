@@ -1,0 +1,8 @@
+prefix=/home/diana/JumpingDriving_Sim/build/URDF/devel
+
+Name: URDF
+Description: Description of URDF
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

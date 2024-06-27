@@ -1,0 +1,55 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using CATKIN_DEVEL_PREFIX: /home/diana/JumpingDriving_Sim/build/URDF/devel
+-- Using CMAKE_PREFIX_PATH: /opt/ros/noetic
+-- This workspace overlays: /opt/ros/noetic
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using Debian Python package layout
+-- Found PY_em: /home/diana/.local/lib/python3.8/site-packages/em.py  
+-- Using empy: /home/diana/.local/lib/python3.8/site-packages/em.py
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/diana/JumpingDriving_Sim/build/URDF/test_results
+-- Forcing gtest/gmock from source, though one was otherwise available.
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Found Threads: TRUE  
+-- Using Python nosetests: /usr/bin/nosetests3
+-- catkin 0.8.10
+-- BUILD_SHARED_LIBS is on
+WARNING: Package name "URDF" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/diana/JumpingDriving_Sim/build/URDF
+[35m[1mScanning dependencies of target tests[0m
+Built target tests
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/diana/JumpingDriving_Sim/install/URDF/lib/pkgconfig/URDF.pc
+-- Symlinking: /home/diana/JumpingDriving_Sim/install/URDF/share/URDF/cmake/URDFConfig.cmake
+-- Symlinking: /home/diana/JumpingDriving_Sim/install/URDF/share/URDF/cmake/URDFConfig-version.cmake
+-- Symlinking: /home/diana/JumpingDriving_Sim/install/URDF/share/URDF/package.xml
+-- Symlinking: /home/diana/JumpingDriving_Sim/install/URDF/share/URDF/config/joint_names_URDF.yaml
+-- Symlinking: /home/diana/JumpingDriving_Sim/install/URDF/share/URDF/launch/display.launch
+-- Symlinking: /home/diana/JumpingDriving_Sim/install/URDF/share/URDF/launch/gazebo.launch
+-- Symlinking: /home/diana/JumpingDriving_Sim/install/URDF/share/URDF/meshes/Body.STL
+-- Symlinking: /home/diana/JumpingDriving_Sim/install/URDF/share/URDF/meshes/Pinion.STL
+-- Symlinking: /home/diana/JumpingDriving_Sim/install/URDF/share/URDF/meshes/Wheel_L.STL
+-- Symlinking: /home/diana/JumpingDriving_Sim/install/URDF/share/URDF/meshes/Wheel_R.STL
+-- Symlinking: /home/diana/JumpingDriving_Sim/install/URDF/share/URDF/urdf/URDF.csv
+-- Symlinking: /home/diana/JumpingDriving_Sim/install/URDF/share/URDF/urdf/URDF.urdf
